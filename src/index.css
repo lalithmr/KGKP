@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@650;700;850&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cinzel", "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", "Poppins", system-ui, sans-serif;
+  --font-display: "Poppins", system-ui, sans-serif;
+  
+  --color-vintage-cream: #F7F1DE;
+  --color-sage-green: #B0BA99;
+  --color-warm-ochre: #9D6638;
+  --color-deep-brown: #4E220F;
+}
+
+/* Custom visual utilities */
+html {
+  scroll-behavior: smooth;
+  background-color: #F7F1DE;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #4E220F;
+  background-color: #F7F1DE;
+  overflow-x: hidden;
+}
+
+/* Responsive Fluid typography clamp helpers */
+.clamp-title {
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  line-height: 1.1;
+}
+
+.clamp-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
+}
+
+.clamp-h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1.2;
+}
+
+/* Scrollbar tweaks */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
